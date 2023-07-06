@@ -1,4 +1,17 @@
-# DesafioAngular
+# Memoteca
+Projeto proporcionado pelo desafio do curso Angular 14: aplique os conceitos e desenvolva seu primeiro CRUD da formação Explore o framework Angular da Alura onde foi proporcionando os seguintes ensinamentos:
+
+- Utilize a ferramenta Angular CLI para criar um projeto e diversos tipos de arquivos
+- Entenda a estrutura de um componente em Angular
+- Aprenda como usar property binding, interpolação, event binding e two-way data binding
+- Conheça algumas das principais diretivas do Angular
+- Adicione navegação dinâmica entre componentes através das rotas
+- Aplique injeção de dependências na aplicação
+- Realize requisições HTTP através da classe HttpClient e desenvolva um CRUD
+
+
+Com este curso obtive mais conhecimentos sobre o Angular e boas práticas sobre o framework.
+Este projeto consiste em uma aplicação onde o usuário pode registrar, alterar e excluir suas ideias. Semelhante a um bloco de notas com mais funcionalidades.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.2.
 
