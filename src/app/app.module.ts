@@ -7,13 +7,15 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { CriarNotasComponent } from './componentes/notas/criar-notas/criar-notas.component';
 import { FormsModule } from '@angular/forms';
+import { ListarNotasComponent } from './componentes/notas/listar-notas/listar-notas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CriarNotasComponent
+    CriarNotasComponent,
+    ListarNotasComponent
   ],
   imports: [
     BrowserModule,
