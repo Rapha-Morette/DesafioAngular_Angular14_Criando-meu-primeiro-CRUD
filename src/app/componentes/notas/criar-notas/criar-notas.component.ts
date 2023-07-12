@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Nota } from '../nota';
+import { NotaService } from '../nota.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-criar-notas',
@@ -8,17 +10,19 @@ import { Nota } from '../nota';
 })
 export class CriarNotasComponent {
   nota: Nota = {
-    id: 1,
-    conteudo: 'Aprendendo Angular',
-    autoria: 'Dev',
-    modelo: 'modelo1',
+    conteudo: '',
+    autoria: '',
+    modelo: '',
   };
+  constructor(private service: NotaService, private router: Router) {}
 
   criarNota() {
-    alert('Nota criada com sucesso!');
+    this.service.criar(this.nota).subscribe(() => {
+      this.router.navigate(['/listarNotas'])
+    })
   }
 
   cancelarNota() {
-    alert('Nota cancelada!');
+   this.router.navigate(['/listarNotas'])
   }
 }
